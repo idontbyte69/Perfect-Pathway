@@ -50,6 +50,7 @@ The project employs a systematic approach to pathfinding and visualization:
 3. **Development Tools**
    - Git: For version control
    - Python IDE/Text Editor: For code development
+   - Cursor AI
 
 4. **Key Technologies**
    - Graph Theory Algorithms
