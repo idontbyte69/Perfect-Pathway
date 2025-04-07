@@ -54,6 +54,6 @@ The project employs a systematic approach to pathfinding and visualization:
 
 4. **Key Technologies**
    - Graph Theory Algorithms
-   - GUI Development
+   - GUI Development (Graphical User interface)
    - Data Visualization
    - Interactive Simulation 
