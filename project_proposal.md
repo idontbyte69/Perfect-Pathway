@@ -40,7 +40,7 @@ The project employs a systematic approach to pathfinding and visualization:
 
 ## Technology Stack
 1. **Programming Language**
-   - Python 3.x
+   - Python 3.12
 
 2. **Core Libraries**
    - NetworkX: For graph operations and pathfinding algorithms

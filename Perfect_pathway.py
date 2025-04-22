@@ -51,7 +51,7 @@ def start_simulation():
     path = nx.shortest_path(G, source=home_node, target=destination_node, weight='cost')
 
 
-    result_message = f"Army is going to {destination_node} through the following path: {path}\n"
+    result_message = f"{roles} is going to {destination_node} through the following path: {path}\n"
     total_cost = sum(G[path[i]][path[i+1]]['cost'] for i in range(len(path)-1))
     result_message += f"Total Cost/Injuries: {total_cost}"
 
@@ -62,14 +62,14 @@ def start_simulation():
     edge_labels = {(path[i], path[i+1]): G[path[i]][path[i+1]]['cost'] for i in range(len(path)-1)}
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
     
-    plt.title("Perfect Pathway - Army Simulation")
+    plt.title("Perfect Pathway")
 
     plt.show()
 
     messagebox.showinfo("Simulation Result", result_message)
 
 root = tk.Tk()
-root.title("Graph Traverse Game-Graph Traverse Game")
+root.title("Perfect Pathway")
 
 welcome_label = tk.Label(root, text="Welcome to the game", font=("Helvetica", 16))
 welcome_label.pack(pady=10)
